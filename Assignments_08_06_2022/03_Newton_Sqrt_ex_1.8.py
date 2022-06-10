@@ -1,6 +1,6 @@
 def guess_enough(value, target):
 
-    '''guess_enough(value,target) function determina the accuracy'''
+    '''guess_enough(value,target) function determins the accuracy'''
 
     if abs(value**3 - target) < 0.0001:
 
@@ -30,7 +30,7 @@ def improve(root, target):
 
 def cube(n):
 
-    '''This is the main cube(n) function which calculate
+    '''This is the main cube(n) function which calculates
     cube root of a given number.
     '''
 
