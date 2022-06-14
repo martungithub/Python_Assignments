@@ -10,6 +10,10 @@ def pow(m, n):
     return res
 
 
+def square(n):
+    return n * n
+
+
 def is_even(n):
 
     # This function will check is the number even or not
@@ -26,9 +30,9 @@ def fast_pow(m, n):
 
     res = 1
     count = 0
-    while count < n/2:
+    while count < n:
         if is_even(n):
-            res = m * pow(m, n/2)
+            res = square(pow(m, n/2))
         else:
             res = m * pow(m, n-1)
         count += 1
@@ -37,4 +41,4 @@ def fast_pow(m, n):
 # Function call
 
 
-print(fast_pow(2, 5))
+print(fast_pow(2, 7))
