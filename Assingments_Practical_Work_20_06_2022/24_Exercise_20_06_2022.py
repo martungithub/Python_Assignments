@@ -1,7 +1,7 @@
 numbers = []
 inputs = ''
 while inputs != '0':
-    inputs = input("Enter Name, or 0 to quit': ")
+    inputs = input("Enter Numbers, or 0 to quit': ")
     numbers.append(inputs)
 numbers = numbers[:-1]
 answer = 0
