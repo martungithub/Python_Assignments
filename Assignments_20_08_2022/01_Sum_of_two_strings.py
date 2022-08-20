@@ -10,7 +10,7 @@ def sum_of_numbers(number1, number2):
         number1 = "0" * (len(number2) - len(number1)) + number1
 
     for i in range(len(number1) - 1, -1, -1):
-        sum_of_nums = int(number1[i]) + int(number2[i])
+        sum_of_nums = int(number1[i]) + int(number2[i]) + carry
         carry = sum_of_nums // 10
         result += str(sum_of_nums % 10)
     result = result[::-1]
